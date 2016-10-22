@@ -15,9 +15,10 @@
           -->
       </md-nav-bar>
       <md-button class="md-icon-button md-fab md-mini" aria-label="Favorite">
-        <i class="material-icons" md-colors="{color: 'default-warn-900'}">favorite</i>
+        <i class="material-icons" md-colors="{color: $ctrl.getBackground()}">favorite</i>
       </md-button>
       <md-button class="md-icon-button" aria-label="More">
+        {{$ctrl.dynamicTheme}}
         <i class="material-icons">more_vert</i>
       </md-button>
     </div>

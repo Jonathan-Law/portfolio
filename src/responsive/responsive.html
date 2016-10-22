@@ -17,10 +17,10 @@
     <script src="{%= o.htmlWebpackPlugin.options.pkg.cdnDependencies[dependency] %}"></script>
   {% } %}
 </head>
-<body ng-cloak ng-strict-di flex="100">
+<body ng-cloak ng-strict-di flex="100" md-theme="{{getTheme()}}" md-theme-watch>
   <div id="appContainer" flex="100" layout="column">
     <navigation></navigation>
-    <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column" layout-align="center center"></div>
+    <div ui-view md-colors="{background: getBackground()}" flex="100" layout="column" layout-align="center center"></div>
   </div>
   {% if (o.htmlWebpackPlugin.options.dev) { %}<script src="/webpack-dev-server.js"></script>{% } %}
   <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->

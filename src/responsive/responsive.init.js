@@ -11,6 +11,13 @@ function init($rootScope) {
     } else {
       $rootScope.title = 'jonlaw.us — ' + toState.name.charAt(0).toUpperCase() + toState.name.slice(1);
     }
+    $rootScope.getBackground = () => {
+      return `${$rootScope.dynamicTheme || 'main'}-background`;
+    };
+    $rootScope.dynamicTheme = toState.name;
+    $rootScope.getTheme = () => {
+      return `${$rootScope.dynamicTheme || 'main'}`;
+    };
     // $rootScope.title = toState.name;
   });
 }
