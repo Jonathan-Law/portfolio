@@ -1,4 +1,6 @@
 require('./responsive.css');
+require('angular-material');
+require('angular-aria');
 
 import angular from 'angular';
 import 'ng-redux';
@@ -8,6 +10,8 @@ const ngDependencies = [
   'ui.router',
   'ngAnimate',
   'ngRedux',
+  'ngMaterial',
+  'ngAria',
   require('../common').name,
   // Add additional external Angular dependencies here
 ];

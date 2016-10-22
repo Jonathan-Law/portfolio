@@ -1,0 +1,4 @@
+@import "../../../../../common/styles/variables.css";
+.tiffiny-route {
+  > .item { /* ... */ }
+}

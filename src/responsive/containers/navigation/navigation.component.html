@@ -1,0 +1,24 @@
+<div class="navigation">
+  <md-toolbar class="md-hue-2">
+    <div class="md-toolbar-tools">
+      <md-button class="md-icon-button" aria-label="Settings">
+        <i class="material-icons">menu</i>
+      </md-button>
+      <md-nav-bar md-selected-nav-item="$ctrl.currentNavItem" nav-bar-aria-label="navigation links" flex>
+        <md-nav-item md-nav-sref="main" name="main"><span md-colors="{color: 'grey-100'}">Home</span></md-nav-item>
+        <!-- <md-nav-item md-nav-sref="goto('page2')" name="page2"><span md-colors="{color: 'grey-100'}">Portfolio</span></md-nav-item> -->
+        <md-nav-item md-nav-sref="tiffiny" name="tiffiny"><span md-colors="{color: 'grey-100'}">Tiffiny</span></md-nav-item>
+        <!-- these require actual routing with ui-router or ng-route, so they won't work in the demo
+          <md-nav-item md-nav-sref="app.page4" name="page4">Page Four</md-nav-item>
+          <md-nav-item md-nav-href="#page5" name="page5">Page Five</md-nav-item>
+          -->
+      </md-nav-bar>
+      <md-button class="md-icon-button md-fab md-mini" aria-label="Favorite">
+        <i class="material-icons" md-colors="{color: 'default-warn-900'}">favorite</i>
+      </md-button>
+      <md-button class="md-icon-button" aria-label="More">
+        <i class="material-icons">more_vert</i>
+      </md-button>
+    </div>
+  </md-toolbar>
+</div>
