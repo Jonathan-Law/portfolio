@@ -7,9 +7,11 @@ $baseLineHeight: 1.5;
 $leading: $baseLineHeight * 1rem;
 
 /* Rate of growth for headings
- * I actually like this to be slightly smaller then the leading. Makes for tight headings. 
+ * I actually like this to be slightly smaller then the leading. Makes for tight headings.
  */
 $scale: 1.414;
 
 /* Domo Blue Color */
-$domo-blue: #99ccee;
+/*$portfolio-color: #99ccee;*/
+$portfolio-color: rgb(38, 50, 56);
+$portfolio-color-inverse: rgb(217, 205, 199);

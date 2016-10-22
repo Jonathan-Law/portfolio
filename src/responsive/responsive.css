@@ -1,5 +1,16 @@
 @import '../common/styles/variables.css';
 
-body {
-  color: $domo-blue;
+#appContainer {
+  -webkit-tap-highlight-color: transparent;
+  -webkit-touch-callout: none;
+  min-height: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+div[ui-view] > :first-child {
+  flex: 1 1 100%;
+  display: flex;
 }

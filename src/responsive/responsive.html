@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html flex="100">
 <head lang="en">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,14 +9,17 @@
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
 
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/angular-material/1.1.1/angular-material.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+
   {% for (var dependency in o.htmlWebpackPlugin.options.pkg.cdnDependencies) { %}
     <script src="{%= o.htmlWebpackPlugin.options.pkg.cdnDependencies[dependency] %}"></script>
   {% } %}
 </head>
-<body ng-cloak ng-app="da.responsive" ng-strict-di>
-  <div id="appContainer">
-    <h1>Responsive</h1>
-    <div ui-view></div>
+<body ng-cloak ng-app="da.responsive" ng-strict-di flex="100">
+  <div id="appContainer" flex="100" layout="column">
+    <navigation></navigation>
+    <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column"></div>
   </div>
   {% if (o.htmlWebpackPlugin.options.dev) { %}<script src="/webpack-dev-server.js"></script>{% } %}
   <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
