@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html flex="100">
+<html flex="100" ng-app="da.responsive">
 <head lang="en">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
-  <title>{%= o.htmlWebpackPlugin.options.title %}</title>
+  <title>{{title}}</title>
+  <!-- <title>{%= o.htmlWebpackPlugin.options.title %}</title> -->
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -16,7 +17,7 @@
     <script src="{%= o.htmlWebpackPlugin.options.pkg.cdnDependencies[dependency] %}"></script>
   {% } %}
 </head>
-<body ng-cloak ng-app="da.responsive" ng-strict-di flex="100">
+<body ng-cloak ng-strict-di flex="100">
   <div id="appContainer" flex="100" layout="column">
     <navigation></navigation>
     <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column" layout-align="center center"></div>
