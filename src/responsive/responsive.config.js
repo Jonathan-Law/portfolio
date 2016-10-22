@@ -3,10 +3,7 @@ module.exports = config;
 function config($ngReduxProvider, $locationProvider, $urlRouterProvider, $mdThemingProvider) {
   $ngReduxProvider.createStoreWith(require('../common/store/reducers'));
   $urlRouterProvider.otherwise('/main');
-  $locationProvider.html5Mode({
-    enabled: true,
-    requireBase: false
-  });
+  $locationProvider.html5Mode(true);
   $mdThemingProvider.theme('default')
     .primaryPalette('blue-grey')
     .accentPalette('light-green', {
