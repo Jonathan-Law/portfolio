@@ -15,7 +15,7 @@
     "version": "npm run build && npm run changelog && git add -A CHANGELOG.md",
     "postversion": "git push && git push --tags",
     "changelog": "conventional-changelog -p angular -i CHANGELOG.md -w -r 0",
-    "upload": "git checkout master && git pull origin master && npm run build && git add . && git commit -m\"Build Artifacts\" && git push prod master -F",
+    "upload": "git diff --exit-code && git checkout master && git pull origin master && npm run build && git add . && git commit -m\"Build Artifacts\" && git push prod master -f",
     "update-tools": "node other/update.js"
   },
   "author": "AppTeam6 <Squad.AppTeam6@domo.com>",
