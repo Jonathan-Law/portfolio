@@ -19,7 +19,7 @@
 <body ng-cloak ng-app="da.responsive" ng-strict-di flex="100">
   <div id="appContainer" flex="100" layout="column">
     <navigation></navigation>
-    <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column"></div>
+    <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column" layout-align="center center"></div>
   </div>
   {% if (o.htmlWebpackPlugin.options.dev) { %}<script src="/webpack-dev-server.js"></script>{% } %}
   <!-- {%= o.htmlWebpackPlugin.options.pkg.name + ' v' + o.htmlWebpackPlugin.options.pkg.version + ' built on ' + new Date() %} -->
