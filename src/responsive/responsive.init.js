@@ -8,6 +8,8 @@ function init($rootScope) {
       $rootScope.title = 'JonLaw.us';
     } else if (toState.name === 'tiffiny') {
       $rootScope.title = 'Tiffiny Law';
+    } else {
+      $rootScope.title = toState.name.charAt(0).toUpperCase() + toState.name.slice(1);
     }
     // $rootScope.title = toState.name;
   });
