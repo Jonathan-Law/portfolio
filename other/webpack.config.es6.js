@@ -219,7 +219,7 @@ if (INCLUDE_DESKTOP_VIEW) {
   if (!ON_TEST) {
     config.plugins.push(
       new HtmlWebpackPlugin({
-        title: 'Desktop',
+        title: 'JonLaw.us',
         dev: ON_DEV,
         pkg: pkg,
         template: 'src/desktop/desktop.html', // Load a custom template
@@ -238,7 +238,7 @@ if (INCLUDE_RESPONSIVE_VIEW) {
   if (!ON_TEST) {
     config.plugins.push(
       new HtmlWebpackPlugin({
-        title: 'Responsive',
+        title: 'JonLaw.us',
         dev: ON_DEV,
         pkg: pkg,
         template: 'src/responsive/responsive.html', // Load a custom template
