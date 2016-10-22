@@ -13,4 +13,7 @@
 div[ui-view] > :first-child {
   flex: 1 1 100%;
   display: flex;
+  min-width: 100%;
+  align-content: center;
+  align-items: center;
 }
