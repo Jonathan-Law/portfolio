@@ -1,11 +1,10 @@
 <!DOCTYPE html>
-<html flex="100" ng-app="da.responsive">
+<html flex="100">
 <head lang="en">
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width = device-width, initial-scale=1.0, user-scalable=no">
-  <title>{{title}}</title>
-  <!-- <title>JonLaw.us</title> -->
+  <title>JonLaw.us</title>
 
   <!-- Disable tap highlight on IE -->
   <meta name="msapplication-tap-highlight" content="no">
@@ -31,12 +30,12 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.8/angular-aria.js"></script>
   
 </head>
-<body ng-cloak ng-strict-di flex="100">
+<body ng-cloak ng-app="da.responsive" ng-strict-di flex="100">
   <div id="appContainer" flex="100" layout="column">
     <navigation></navigation>
     <div ui-view md-colors="{background: 'default-background'}" flex="100" layout="column" layout-align="center center"></div>
   </div>
   
-  <!-- portfolio v0.0.1 built on Fri Oct 21 2016 23:09:52 GMT-0600 (MDT) -->
+  <!-- portfolio v0.0.1 built on Sat Oct 22 2016 01:04:33 GMT-0600 (MDT) -->
 <script src="/responsive/responsive.js"></script></body>
 </html>
