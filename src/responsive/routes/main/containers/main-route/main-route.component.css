@@ -10,8 +10,10 @@
 }
 
 .md-button.md-main-theme.md-accent {
-  &:not([disabled]):hover {
-    background-color: rgba(117,117,117,0.4);
+  &:not(.md-icon-button) {
+    &:not([disabled]):hover {
+      background-color: rgba(117,117,117,0.4);
+    }
+    background-color: rgba(117, 117, 117, 1.0);
   }
-  background-color: rgba(117, 117, 117, 1.0);
 }
