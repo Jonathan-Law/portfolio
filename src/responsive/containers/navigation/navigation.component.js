@@ -10,7 +10,7 @@ module.exports = ngModule => {
     }
   });
 
-  function navigationCtrl($state, $scope) {
+  function navigationCtrl($state, $scope, $rootScope) {
     const ctrl = this;
 
     ctrl.$onInit = $onInit;
@@ -27,11 +27,11 @@ module.exports = ngModule => {
       // toState === $state.current
       ctrl.currentNavItem = toState.name;
     });
-    $scope.$watch('dynamicTheme', (newval/*, toParams, fromState, fromParams*/) => {
+    $rootScope.$watch('dynamicTheme', (newval/*, toParams, fromState, fromParams*/) => {
       ctrl.dynamicTheme = newval;
     });
   }
 
   // inject dependencies here
-  navigationCtrl.$inject = ['$state', '$scope'];
+  navigationCtrl.$inject = ['$state', '$scope', '$rootScope'];
 };
