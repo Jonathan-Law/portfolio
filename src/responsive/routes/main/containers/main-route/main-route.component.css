@@ -1,3 +1,17 @@
 .main-route {
-  > .item { /* ... */ }
+  .md-button.md-main-theme.md-hue-1.md-accent.md-raised:not([disabled]):hover, .md-button.md-main-theme.md-hue-1.md-accent.md-fab:not([disabled]):hover,
+  .md-button.md-main-theme.md-fab:not([disabled]):hover {
+    &:not(.md-primary) {
+      &:not(.md-warn) {
+        background-color: #B2FF59;
+      }
+    }
+  }
+}
+
+.md-button.md-main-theme.md-accent {
+  &:not([disabled]):hover {
+    background-color: rgba(117,117,117,0.4);
+  }
+  background-color: rgba(117, 117, 117, 1.0);
 }
