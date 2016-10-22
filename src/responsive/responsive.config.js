@@ -1,8 +1,12 @@
 module.exports = config;
 
-function config($ngReduxProvider, $urlRouterProvider, $mdThemingProvider) {
+function config($ngReduxProvider, $locationProvider, $urlRouterProvider, $mdThemingProvider) {
   $ngReduxProvider.createStoreWith(require('../common/store/reducers'));
   $urlRouterProvider.otherwise('/main');
+  $locationProvider.html5Mode({
+    enabled: true,
+    requireBase: false
+  });
   $mdThemingProvider.theme('default')
     .primaryPalette('blue-grey')
     .accentPalette('light-green', {
@@ -21,4 +25,4 @@ function config($ngReduxProvider, $urlRouterProvider, $mdThemingProvider) {
     .dark();
 }
 
-config.$inject = ['$ngReduxProvider', '$urlRouterProvider', '$mdThemingProvider'];
+config.$inject = ['$ngReduxProvider', '$locationProvider', '$urlRouterProvider', '$mdThemingProvider'];
